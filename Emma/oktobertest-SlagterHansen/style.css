@@ -1,0 +1,167 @@
+body {
+    background-color: #515151;
+}
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+}
+.header__logo {
+    width: fit-content;
+    height: 100%;
+    padding-left: 60px;
+    display: flex;
+}
+.header__logo img{
+    height: 60px;
+}  
+.header__navBar {
+    width: fit-content;
+    height: 100%;
+    text-decoration: none;
+}
+.header__navBar ul {
+    list-style: none;
+    margin-left: 30px;
+}
+.header__navBar ul li {
+   display: inline; 
+   float: left ;
+}
+.header__navBar ul li a {
+    padding: 0 10px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: white;
+    line-height: 60px; 
+}
+.header__icon { 
+    width: fit-content;
+    height: 100%;
+} 
+.hero {
+    position: relative;
+    text-align: left;
+}
+.hero__img{
+width: 100%;
+height: 893px;
+}
+.hero__text{
+    position:absolute;
+    top: 50%;
+    left:20%;
+    transform: translate(-50%, -50%);  
+}
+.hero__text h1{
+    font-size: 40px;
+    color: white;
+}
+.hero__text p {
+    font-size: 30px;
+    color: #EF3E35;
+}
+.intro__headline{
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:  #EF3E35;
+
+}
+.intro__text {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+
+
+}
+.recomendedProducts__headline{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.products__all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+.products{
+    background-color: #6B6B6B;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.product__headline{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.product__img{
+    width: 100%;
+    height: 400px;
+}
+.product__price{
+margin-left: 1rem;
+}
+.product__button{
+    color: black;
+    background-color: white;
+    width: 110px;
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem 1rem;
+    border-radius: 20px;
+    border-style: none; 
+}
+.footer{
+    background-image: url(images/footer_img.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    column-gap: 50px;
+    display: flex;
+    align-items: end;    
+}
+.opening__headline{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1rem;
+}
+.opening__all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}
+.opening__all p{
+    margin: 0%;
+}
+.opening__days {
+    font-size: 18px;
+    margin: 0px
+}
+.opening__hours{
+    font-size: 18px;
+}
+.footer__adress{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.address__headline{
+    margin-top: 0px;
+}
+.address__info{
+font-size: 18px;
+}
+.address__link{
+    color:  #EF3E35;
+}
