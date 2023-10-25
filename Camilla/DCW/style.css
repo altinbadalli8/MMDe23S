@@ -1,0 +1,34 @@
+.loginPage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+}
+.loginPage__header {
+  grid-column-start: 2;
+}
+.login__bubbles {
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.numpad__numbers {
+  display: flex;
+  background-color: #6cb3cc;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: ;
+}
+.login {
+  display: flex;
+}
+.numpad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
