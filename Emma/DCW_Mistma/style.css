@@ -82,6 +82,9 @@ body {
   border-radius: 10px;
   display: grid;
   grid-template-columns: 26px 1fr;
+  margin-left: 16px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   text-decoration: none;
   color: black;
   gap: 1rem;
@@ -97,11 +100,13 @@ body {
   height: 29px;
   border-radius: 10px;
   display: grid;
+  grid-template-columns: 0.75fr 1fr;
   grid-template-rows: 26px 1fr;
   text-decoration: none;
   color: black;
   margin-left: 16px;
-  gap: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .languageImages {
   width: 23px;
