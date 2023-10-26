@@ -130,11 +130,17 @@ input + .slider:before {
   .slider.round:before {
     border-radius: 50%;
   }
-.navbar{
+  .toggle{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 41px;
+    margin-bottom: 42px;
+  }
+
+
+  .navbar{
     background-color: #60ABF1;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-
-    /*height: 47px;*/
     bottom: 0;
     left: 0;
     width: 100%;
@@ -146,7 +152,7 @@ input + .slider:before {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center both horizontally and vertically */
+    align-items: center;
     width: 100%;
     height: 47px;  
 }
@@ -166,28 +172,49 @@ input + .slider:before {
     height: 100%;
     z-index: 1;
 }
-/* Styling for the numeric keypad */
-table {
-    border-collapse: collapse;
-    width: 150px;
-    margin: 0 auto;
+.code__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
 }
-
-table, td {
+.code-input {
+    width: 150px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+    margin-top: 4px;
+   
+}
+ 
+input[type="text"] {
+    width: 100%;
     border: none;
 }
-
-/* Styling for circular buttons */
+.keypad-container {
+    text-align: center;
+}
 .circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%; /* Makes the buttons circular */
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     font-size: 18px;
     background-color: #ccc;
-    margin: 5px; /* Add spacing between buttons */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
 }
-
+.numpad__icon{
+  width: 28px;
+  height: 28px;
+  padding-left: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
