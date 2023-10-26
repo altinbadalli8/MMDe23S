@@ -166,21 +166,43 @@ input + .slider:before {
     height: 100%;
     z-index: 1;
 }
-/* Styling for the numeric keypad */
-table {
-    border-collapse: collapse;
-    width: 150px;
-    margin: 0 auto;
+
+/* Styling for the code container */
+.code__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
 }
 
-table, td {
-    border: none;
+/* Styling for the code input box */
+.code-input {
+    width: 150px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded sides */
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bolder;
+    margin-top: 4px;
+    
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none; 
+}
+
+/* Styling for the keypad container */
+.keypad-container {
+    text-align: center;
 }
 
 /* Styling for circular buttons */
 .circle {
-    width: 30px;
-    height: 30px;
+    width: 37px;
+    height: 37px;
     border-radius: 50%; /* Makes the buttons circular */
     display: flex;
     justify-content: center;
@@ -188,6 +210,13 @@ table, td {
     cursor: pointer;
     font-size: 18px;
     background-color: #ccc;
-    margin: 5px; /* Add spacing between buttons */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
 }
-
+.numpad__icon{
+  width: 28px;
+  height: 28px;
+  padding-left: 2px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
