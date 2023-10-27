@@ -390,3 +390,6 @@ input:checked + .slider:before {
 .standby--active {
   display: grid;
 }
+.settingsContact__image--phone {
+  margin: 2.5px 0 0 5px;
+}
