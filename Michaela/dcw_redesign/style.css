@@ -173,7 +173,6 @@ input + .slider:before {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100vh;
 }
 
 /* Styling for the code input box */
