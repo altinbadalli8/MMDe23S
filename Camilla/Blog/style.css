@@ -20,6 +20,9 @@ h4{
   font-family: "La Belle Aurore", cursive;
   font-weight: bolder;
   font-size: 30px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
 .menu ul {
   list-style-type: none;
@@ -39,7 +42,7 @@ h4{
 }
 .frontpagePost {
   
-  margin: 50px 25px 50px 25px;
+  margin: 20px 25px 50px 25px;
   box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.2);
   padding: 15px 15px 70px 15px;
   max-width: 400px;
@@ -107,7 +110,8 @@ body {
 
 .hero__text {
   text-align: center;
-  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 35px;
   grid-column: span 3;
   font-family: "Caveat", cursive;
@@ -140,7 +144,7 @@ body {
   display: block;
 }
 .imageSlider__polaroid {
-  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.08);
   background-color: white;
   width: 25%;
   height: 55%;
@@ -188,7 +192,7 @@ body {
 	#i4:checked ~ #four ,
 	#i5:checked ~ #five ,
   #i6:checked ~ #six 
-	{z-index: 9; animation: scroll 1s ease-in-out;}
+	{z-index: 9; ;}
 
 	#i1:checked  ~  #nav_slide #dot1,
 	#i2:checked  ~  #nav_slide #dot2,
@@ -209,10 +213,22 @@ body {
   .footer__social{
     display: flex;
     justify-content: center;
+    margin: 10px 0 0 0;
+  }
+  .footer__social::before{
+    content: "__________________________";
+    color: rgb(45, 45, 80);
+  }
+  .footer__social::after{
+    content: "__________________________";
+    color: rgb(45, 45, 80);
   }
   .footer__description{
     text-align: center;
     font-style: italic;
+    width: 500px;
+    margin: 20px auto 0 auto;
+    margin-bottom: 0;
   }
 @keyframes scroll {
   0% {
