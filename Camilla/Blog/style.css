@@ -1,61 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Covered+By+Your+Grace&family=Jacques+Francois&family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Covered+By+Your+Grace&family=Jacques+Francois&family=La+Belle+Aurore&family=Roboto:wght@100;300&display=swap");
-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  line-height: 1.7;
-  font-family: font-family: 'Caveat', cursive;
-  font-family: 'Covered By Your Grace', cursive;
-  font-family: 'Jacques Francois', serif;
-  font-family: 'La Belle Aurore', cursive;
-  font-family: 'Roboto', sans-serif;;
-}
-.tape {
-  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.1);
-  background-color: #dbd8be;
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  border-right: 1px #dbd8be;
-  border-left: 1px #dbd8be;
-  opacity: 0.5;
-  transform: rotate(-50deg);
-}
-.tape--left {
-  right: 13vmin;
-  top: -3vmin;
-}
-.tape--right {
-  right: 13vmin;
-  top: -3vmin;
-  transform: rotate(40deg);
-}
-.menu__burger {
+.tape{
   display: none;
 }
-.frontpagePost {
-  margin: 50px 25px 50px 25px;
-  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.2);
-  padding: 15px 15px 70px 15px;
-  max-width: 400px;
-  min-width: 100px;
-  text-align: center;
-}
-.frontpagePost__img {
-  max-width: 100%;
-}
-.frontpagePost__header {
-  font-family: "Caveat", cursive;
-  font-family: "Covered By Your Grace", cursive;
-  font-family: "Jacques Francois", serif;
-  font-family: "La Belle Aurore", cursive;
-  font-size: 30px;
-  transform: rotate(2deg);
-}
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column: span 3;
+h4{
+  font-size: 19px;
+  line-height: 1.9;
 }
 .menu__list {
   display: flex;
@@ -69,7 +19,7 @@ body {
   font-family: "Jacques Francois", serif;
   font-family: "La Belle Aurore", cursive;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
 }
 .menu ul {
   list-style-type: none;
@@ -79,8 +29,34 @@ body {
 .menu {
   padding-top: 8px;
 }
-.logo {
-  width: 200px;
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 3;
+}
+.logo{
+  width: 250px;
+}
+.frontpagePost {
+  
+  margin: 50px 25px 50px 25px;
+  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.2);
+  padding: 15px 15px 70px 15px;
+  max-width: 400px;
+  min-width: 100px;
+  text-align: center;
+  justify-self: center;
+}
+.frontpagePost__img {
+  max-width: 100%;
+}
+.frontpagePost__header {
+  font-family: "Caveat", cursive;
+  font-family: "Covered By Your Grace", cursive;
+  font-family: "Jacques Francois", serif;
+  font-family: "La Belle Aurore", cursive;
+  font-size: 30px;
+  transform: rotate(2deg);
 }
 .post {
   margin: 50px auto 50px auto;
@@ -105,13 +81,6 @@ body {
   grid-column: span 3;
   margin: auto 20% 50px 20%;
 }
-.post--small {
-  max-height: 250px;
-  transform: rotate(5deg);
-}
-.post--rotateLeft {
-  transform: rotate(-5deg);
-}
 .hero {
   display: flex;
   flex-direction: row-reverse;
@@ -119,7 +88,7 @@ body {
   grid-column: span 3;
 }
 .hero__image {
-  max-width: 100%;
+  width: 100vw;
   grid-column: span 3;
 }
 
@@ -127,25 +96,30 @@ body {
   width: 300px;
   border: solid 5px white;
   position: absolute;
+  max-width: 150px;
 }
 
 body {
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .hero__text {
   text-align: center;
   margin: 5px;
-  font-size: 50px;
+  font-size: 35px;
   grid-column: span 3;
   font-family: "Caveat", cursive;
   font-family: "Covered By Your Grace", cursive;
   font-family: "Jacques Francois", serif;
-  font-family: "La Belle Aurore", cursive;
-}
-#i1,
+  font-family: "La Belle Aurore", cursive;}
+  #i1,
 #i2,
-#i3 {
+#i3,
+#i4,
+#i5,
+#i6 {
   display: none;
 }
 .imageSlider {
@@ -169,7 +143,7 @@ body {
   box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.2);
   background-color: white;
   width: 25%;
-  height: 30%;
+  height: 55%;
   padding: 10px 10px 120px 10px;
   justify-self: center;
   font-family: "Caveat", cursive;
@@ -177,11 +151,11 @@ body {
   font-family: "Jacques Francois", serif;
   font-family: "La Belle Aurore", cursive;
   text-align: center;
-  min-width: 200px;
+  min-width: 270px;
 }
 .imageSlider #nav_slide {
   display: block;
-  margin-top: 320px;
+  margin-top: 450px;
   width: 100%;
   height: 11px;
   position: absolute;
@@ -208,37 +182,38 @@ body {
 .imageSlider__item {
   z-index: -1;
 }
+#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five ,
+  #i6:checked ~ #six 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
 
-#i1:checked ~ #one,
-#i2:checked ~ #two,
-#i3:checked ~ #three {
-  z-index: 9;
-  animation: scroll 1s ease-in-out;
-}
-
-#i1:checked ~ #nav_slide #dot1,
-#i2:checked ~ #nav_slide #dot2,
-#i3:checked ~ #nav_slide #dot3 {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.footer {
-  grid-column: span 3;
-}
-.footer__icon {
-  width: 50px;
-}
-.footer_copyright{
-  text-align: center;
-}
-.footer__social{
-  display: flex;
-  justify-content: center;
-}
-.footer__description{
-  text-align: center;
-  font-style: italic;
-}
-
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5,
+  #i6:checked  ~  #nav_slide #dot6
+	{ background-color: rgba(0, 0, 0, 0.9);}
+  .footer{
+    background-color: lightblue;
+  }
+  .footer__icon {
+    width: 50px;
+  }
+  .footer_copyright{
+    text-align: center;
+  }
+  .footer__social{
+    display: flex;
+    justify-content: center;
+  }
+  .footer__description{
+    text-align: center;
+    font-style: italic;
+  }
 @keyframes scroll {
   0% {
     opacity: 0.4;
@@ -247,7 +222,7 @@ body {
     opacity: 1;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   body {
     display: block;
   }
@@ -296,3 +271,57 @@ body {
     right: 0;
   }
 }
+@media (min-width:650px){
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  line-height: 1.7;
+  font-family: font-family: 'Caveat', cursive;
+  font-family: 'Covered By Your Grace', cursive;
+  font-family: 'Jacques Francois', serif;
+  font-family: 'La Belle Aurore', cursive;
+  font-family: 'Roboto', sans-serif;;
+}
+.tape {
+  display: block;
+  box-shadow: 5px 10px 27px rgba(0, 0, 0, 0.1);
+  background-color: #dbd8be;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border-right: 1px #dbd8be;
+  border-left: 1px #dbd8be;
+  opacity: 0.5;
+  transform: rotate(-50deg);
+}
+.tape--left {
+  right: 13vmin;
+  top: -3vmin;
+}
+.tape--right {
+  right: 13vmin;
+  top: -3vmin;
+  transform: rotate(40deg);
+}
+.menu__burger {
+  display: none;
+}
+
+.footer {
+  grid-column: span 3;
+}
+}
+@media (min-width:1170px){
+  .post--small {
+    max-height: 250px;
+    transform: rotate(5deg);
+  }
+  .post--rotateLeft {
+    transform: rotate(-5deg);
+  }
+  .hero__image--small{
+    max-width: 300px;
+  }
+}
+
