@@ -119,8 +119,9 @@ body {
   grid-column: span 3;
 }
 .hero__image {
-  max-width: 100%;
+  max-width: 100% ;
   grid-column: span 3;
+  
 }
 
 .hero__image--small {
@@ -294,6 +295,9 @@ body {
   .menu__list {
     background: white;
     right: 0;
+  }
+  .hero__image--small{
+    max-width: 40%;
   }
 }
 
