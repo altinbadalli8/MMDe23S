@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studieby Sønderborg</title>
+    <title>Studiebyen Sønderborg Blog</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.png" alt="" class="logo" />
+      <a href="index.html"><img src="images/logo.png" alt="" class="logo" /></a>
       <nav class="menu">
         <ul>
           <li>
@@ -33,18 +33,48 @@
         </ul>
       </nav>
     </header>
-    <picture class="hero">
-    <video class="hero__image" src="/images/Sønderborg 🇩🇰 _ Golden Oktober.mp4" autoplay></video>
+    <section class="hero">
+      <img class="hero__image" src="images/Sønderborg.jpg" alt="sønderborg" />
 
-</picture>
-    
-    <section class="authorsection">
-        <img class="authorsection__image" src="/images/ishockey.jpg" alt="#">
+      <img
+        class="hero__image--small"
+        src="images/ishockey.jpg"
+        alt="ishockey"
+      />
     </section>
-<header class="headerinformation">
-    <h1 class="headerinformation__text">
-        Studiebys Blog Posts
-    </h1>
-</header>
+    <h2 class="hero__text">Heeej Bloggen!</h2>
+
+    <section class="frontpagePost">
+      <a href="party.html"
+        ><img class="frontpagePost__img" src="images/uak fest1.png" alt="party"
+      /></a>
+      <section class="post__text">
+        <h3 class="frontpagePost__header">Gang i Sønderborg!</h3>
+      </section>
+    </section>
+
+    <section class="frontpagePost">
+      <a href="bolig.html"
+        ><img
+          class="frontpagePost__img"
+          src="images/studiebolig.jpg"
+          alt="bolig"
+      /></a>
+      <section class="post__text">
+        <h3 class="frontpagePost__header">Studiebolig eller alm bolig?</h3>
+      </section>
+    </section>
+
+    <section class="frontpagePost">
+      <a href="jul.html"
+        ><img
+          class="frontpagePost__img"
+          src="images/julehygge1.jpg"
+          alt="christmas"
+      /></a>
+      <section class="post__text">
+        <h3 class="frontpagePost__header">Jul i Sønderborg!</h3>
+      </section>
+    </section>
   </body>
 </html>
