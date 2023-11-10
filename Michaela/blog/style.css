@@ -33,16 +33,17 @@ body {
     top: 30%;
     left: 10%;
   }
-  .header {
-    margin: 0;
-  }
   .navbar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
   }
+   
   .hamburger {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
    
   .hamburger__bar {
@@ -63,8 +64,13 @@ body {
   }
   
   /* - - - MENU - - - */
-  .menu {}
+  .menu {
+  }
   .menu__list {
+      display: none;;
+
+  }
+  .menu__list.active {
     display: flex;
     list-style-type: none;
   }
