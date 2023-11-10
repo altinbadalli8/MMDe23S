@@ -20,10 +20,31 @@
             /></a>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">Hjem</a>
+                <a href="index.html" class="menu__link">Hjem</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">Blog</a>
+                <script type="text/javascript">
+                  function randomlinks() {
+                    var myrandom = Math.round(Math.random() * 5);
+                    var links = new Array();
+                    links[0] = "bolig.html";
+                    links[1] = "bus.html";
+                    links[2] = "borgen.html";
+                    links[3] = "jul.html";
+                    links[4] = "party.html";
+                    links[5] = "mørkeland.html";
+
+                    window.location = links[myrandom];
+                  }
+                </script>
+                <form>
+                  <input
+                    class="menu__link"
+                    type="button"
+                    value="Blog"
+                    onClick="randomlinks()"
+                  />
+                </form>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Studieby Sønderborg</a>
@@ -166,7 +187,7 @@
       </p>
       <p class="footer__social">
         <img
-          src="images/LinkedIn-Icon-Logo.wine.svg"
+          src="images/icons8-linkedin.svg"
           alt=""
           class="footer__icon footer__icon--linkedIn"
         />
