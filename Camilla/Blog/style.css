@@ -49,9 +49,30 @@ h4{
   min-width: 100px;
   text-align: center;
   justify-self: center;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(5deg);
+  }
+  40%,
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+.frontpagePost:hover {
+  animation: swing 1s ease;
 }
 .frontpagePost__img {
   max-width: 100%;
+}
+.frontpagePost:hover {
+  transform: rotate(2deg); /* Add a slight rotation on hover */
 }
 .frontpagePost__header {
   font-family: "Caveat", cursive;
@@ -102,6 +123,7 @@ h4{
   max-width: 150px;
 }
 
+
 body {
   margin: 0;
   display: grid;
@@ -109,6 +131,12 @@ body {
 }
 
 .hero__text {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+  animation: bounce 2s linear infinite;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 0;
@@ -214,6 +242,10 @@ body {
     display: flex;
     justify-content: center;
     margin: 10px 0 0 0;
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: heartBeat 2s linear infinite;
+    overflow: hidden;
   }
   .footer__description{
     display: none;
@@ -237,6 +269,7 @@ body {
   }
   .post--small {
     transform: rotate(0);
+    
   }
   .post--rotateLeft {
     transform: rotate(0);
