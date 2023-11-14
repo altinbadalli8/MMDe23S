@@ -58,21 +58,18 @@ p{
   }
   20%,
   60% {
-    transform: rotate(5deg);
+    transform: rotate(1deg);
   }
   40%,
   80% {
-    transform: rotate(-5deg);
+    transform: rotate(-1deg);
   }
 }
 .frontpagePost:hover {
-  animation: swing 1s ease;
+  animation: swing 1.2s ease;
 }
 .frontpagePost__img {
   max-width: 100%;
-}
-.frontpagePost:hover {
-  transform: rotate(2deg); /* Add a slight rotation on hover */
 }
 .frontpagePost__header {
   font-family: "Caveat", cursive;
