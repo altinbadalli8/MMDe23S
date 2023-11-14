@@ -3,7 +3,7 @@
 .tape{
   display: none;
 }
-h4{
+p{
   font-size: 19px;
   line-height: 1.9;
 }
@@ -120,7 +120,7 @@ h4{
   width: 300px;
   border: solid 5px white;
   position: absolute;
-  max-width: 150px;
+  max-width: 90px;
 }
 
 
@@ -146,7 +146,7 @@ body {
   font-family: "Covered By Your Grace", cursive;
   font-family: "Jacques Francois", serif;
   font-family: "La Belle Aurore", cursive;}
-  #i1,
+#i1,
 #i2,
 #i3,
 #i4,
@@ -350,21 +350,21 @@ body {
   opacity: 0.5;
   transform: rotate(-50deg);
 }
-.tape--left {
-  right: 13vmin;
-  top: -3vmin;
-}
-.tape--right {
-  right: 13vmin;
-  top: -3vmin;
-  transform: rotate(40deg);
-}
 .menu__burger {
   display: none;
 }
 
 .footer {
   grid-column: span 3;
+}
+.tape--left {
+  right: 105vmin;
+  top: 18vmin;
+}
+.tape--right {
+  right: 10vmin;
+  top: 18vmin;
+  transform: rotate(40deg);
 }
 
 }
@@ -381,6 +381,15 @@ body {
   }
   .menu__link{
     font-size: 30px;
+  }
+  .tape--left {
+    right: 13vmin;
+    top: -3vmin;
+  }
+  .tape--right {
+    right: 13vmin;
+    top: -3vmin;
+    transform: rotate(40deg);
   }
   
 }
